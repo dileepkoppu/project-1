@@ -40,7 +40,7 @@ class Image(models.Model):
     is_Approved = models.BooleanField(default=False)
     approved_by = models.CharField(max_length=40)
     created_on = models.DateTimeField(default=timezone.now)
-    updated_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
 
 def post_user_created_signal(sender, instance, created, **kwargs):
