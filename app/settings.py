@@ -141,7 +141,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 
 if not DEBUG:
-    print('hi')
     ALLOWED_HOSTS = ["*"]
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = env("EMAIL_HOST")
